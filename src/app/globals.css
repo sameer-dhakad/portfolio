@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #ffffff;
+    --bg-secondary: #fdfafb;
+    --card-bg: #ffffff;
+    --border-color: rgba(228, 228, 231, 0.7);
+    --border-accent: rgba(244, 114, 182, 0.35);
+    --text-primary: #18181b; /* zinc-900 */
+    --text-secondary: #52525b; /* zinc-600 */
+    --text-muted: #71717a; /* zinc-500 */
+    --accent-pink: #ec4899;
+    --accent-pink-light: #fdf2f8;
+  }
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle modern scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.5);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
